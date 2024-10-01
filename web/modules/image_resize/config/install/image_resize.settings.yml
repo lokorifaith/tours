@@ -1,0 +1,8 @@
+mimetypes: { }
+resize_type: 'max'
+width: null
+height: null
+min_filesize: null
+quality: 80
+extension: ''
+size_threshold: 50

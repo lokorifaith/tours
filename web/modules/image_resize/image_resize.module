@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\file\FileInterface;
+
+/**
+ * @file
+ * Hooks for image_resize module.
+ */
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function image_resize_file_insert(FileInterface $file) {
+  $config = \Drupal::config('image_resize.settings');
+  if (in_array($file->getMimeType(), $config->get('mimetypes'))) {
+    if ($config->get('min_filesize') && $file->getSize() > $config->get('min_filesize')) {
+      $queue = \Drupal::service('queue')->get('image_resize');
+      $queue->createItem($file->id());
+    }
+  }
+}

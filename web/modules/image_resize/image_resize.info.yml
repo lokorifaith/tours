@@ -1,0 +1,12 @@
+name: 'Image Resizer'
+description: 'Resizes images and converts them into different formats'
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:file
+  - drupal:image
+
+# Information added by Drupal.org packaging script on 2023-07-24
+version: '1.0.0-alpha2'
+project: 'image_resize'
+datestamp: 1690225283

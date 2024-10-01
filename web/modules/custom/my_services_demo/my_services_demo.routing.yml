@@ -1,0 +1,44 @@
+my_services_demo.current_user:
+ path: '/current_user'
+ defaults:
+   _controller: '\Drupal\my_services_demo\Controller\UserController::currentUserDemo'
+   _title: 'Current User'
+ requirements:
+   _permission: 'access content'
+
+my_services_demo.current_user_email:
+  path: '/current_user_email'
+  defaults:
+    _controller: '\Drupal\my_services_demo\Controller\UserController::currentUserEmail'
+    _title: 'Current User Email'
+  requirements:
+    _permission: 'access content'
+
+my_services_demo_alerts:
+  path: '/alerts'
+  defaults:
+    _controller: '\Drupal\my_services_demo\Controller\AlertsController::alertsDemo'
+    _title: 'Alert Messages Demo'
+  requirements:
+    _permission: 'access content'
+
+
+my_services_demo.logging:
+  path: '/logging'
+  defaults:
+    _controller: '\Drupal\my_services_demo\Controller\LoggingController::generateLogs'
+    _title: 'Logging Demo'
+  requirements:
+    _permission: 'access content'
+
+
+my_services_demo.translation:
+  path: '/translation'
+  defaults:
+    _controller: '\Drupal\my_services_demo\Controller\TranslationController::translationDemo'
+    _title: 'Translation Demo'
+  requirements:
+    _permission: 'access content'
+
+
+

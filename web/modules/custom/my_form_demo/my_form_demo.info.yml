@@ -1,0 +1,9 @@
+name: 'My Form Demo'
+type: module
+description: 'Provides a demo form and block for ColourForm.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:block
+  - drupal:system
+version: '1.0.0'

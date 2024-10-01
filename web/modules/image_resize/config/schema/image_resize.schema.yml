@@ -1,0 +1,29 @@
+image_resize.settings:
+  type: config_object
+  mapping:
+    mimetypes:
+      type: sequence
+      label: Enabled mime types
+      sequence:
+        type: string
+    resize_type:
+      type: string
+      label: Resize type
+    width:
+      type: integer
+      label: 'Max width'
+    height:
+      type: integer
+      label: 'Max height'
+    min_filesize:
+      type: string
+      label: Minimum file size
+    quality:
+      type: integer
+      label: 'Image quality'
+    extension:
+      type: string
+      label: 'Enforced image type'
+    size_threshold:
+      type: integer
+      label: Size threshold

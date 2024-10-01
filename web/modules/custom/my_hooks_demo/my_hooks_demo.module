@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_user_login().
+ */
+function my_hooks_demo_user_login($account) {
+  // Check if the account object is valid
+  if ($account instanceof \Drupal\Core\Session\AccountInterface) {
+    \Drupal::messenger()->addMessage(t('Hello, @name!', ['@name' => $account->getDisplayName()]));
+  }
+}

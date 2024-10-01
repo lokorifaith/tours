@@ -1,0 +1,17 @@
+my_route_demo.hello:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\my_route_demo\Controller\HelloController::hello'
+    _title: 'Hello'
+  requirements:
+    _permission: 'access content'
+
+my_route_demo.hello_name:
+  path: '/hi/{first_name}/{last_name}'
+  defaults:
+    _controller: '\Drupal\my_route_demo\Controller\HelloController::helloName'
+    _title: 'Hello name'
+  requirements:
+    _permission: 'access content'
+
+    

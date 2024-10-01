@@ -1,0 +1,7 @@
+my_hooks_demo.hello:
+  path: '/my-hooks-demo/hello'
+  defaults:
+    _controller: '\Drupal\my_hooks_demo\Controller\HelloController::hello'
+    _title: 'Hello Page'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+services:
+  image_resize.imagemagick_event_subscriber:
+    class: 'Drupal\image_resize\EventSubscriber\ImagemagickEventSubscriber'
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }

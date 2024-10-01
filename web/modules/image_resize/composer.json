@@ -1,0 +1,12 @@
+{
+  "name": "drupal/image_resize",
+  "description": "Allows to resize and convert existing and new images according to chosen criteria",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^9 || ^10"
+  },
+  "require-dev": {
+    "drupal/imagemagick": "*"
+  }
+}

@@ -1,0 +1,5 @@
+name: "Demo"
+description: "This module doesn't do much yet."
+type: module
+package: "Training"
+core_version_requirement: ^9 || ^10

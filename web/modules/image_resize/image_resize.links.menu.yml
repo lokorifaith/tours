@@ -1,0 +1,4 @@
+image_resize.settings:
+  title: 'Image resizer settings'
+  route_name: image_resize.settings
+  parent: system.admin_config_media

@@ -1,0 +1,7 @@
+image_resize.settings:
+  path: '/admin/config/media/image-resizer'
+  defaults:
+    _form: '\Drupal\image_resize\Form\ImageResizerSettingsForm'
+    _title: 'Image resizer settings'
+  requirements:
+    _permission: 'administer site configuration'
